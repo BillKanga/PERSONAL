@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Pookie <3</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(255, 204, 203); /* Light pink background */
+        }
+
+        h1 {
+            color: #ff007f; /* Magenta text color */
+            font-size: 2.5em; /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        #birthdayMessage {
+            padding: 20px;
+            background-color: #ff6666; /* Light red background */
+            color: #ffffff; /* White text color */
+            border-radius: 10px;
+            max-width: 80%;
+            font-size: 1.5em; /* Increased font size */
+        }
+    </style>
+</head>
+<body>
+    <h1> TO MY POOKIE😂🖤 <3</h1>
+
+    <script>
+        function wishBirthday() {
+            var today = new Date();
+            var birthday = new Date(today.getFullYear(), 2, 1); // February is represented by 1 (0-indexed month)
+
+            if (
+                today.getMonth() === birthday.getMonth() &&
+                today.getDate() === birthday.getDate()
+            ) {
+                var name = "Viy";
+                var birthdayMessage = "! 🎉🎂Happy Birthday Bestfriend and i know you are very impressed dont worry you can pay me later 😂 Just know that i'll be here for you for as long as possible🖤🖤 na ukirudi shule usome😂😂 All the best and just know im always here for you my love. ";
+                document.getElementById("birthdayMessage").innerHTML = "<h2>" + birthdayMessage + "</h2>"
+
+               else {
+                var notBirthdayMessage = "Not your birthday today! 🖤";
+                document.getElementById("notBirthdayMessage").innerHTML = "<h2>" + notBirthdayMessage + "</h2>";
+                document.getElementById("notBirthdayMessage").style.display = "block"; // Show notBirthdayMessage
+            }
+        }
+
+        // Automatically check birthday on page load
+        window.onload = wishBirthday;
+    </script>
+
+    <div id="birthdayMessage"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+❤️❤️❤️
