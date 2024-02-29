@@ -39,7 +39,7 @@
     <script>
         function wishBirthday() {
             var today = new Date();
-            var birthday = new Date(today.getFullYear(), 2, 1); // February is represented by 1 (0-indexed month)
+            var birthday = new Date(today.getFullYear(), 1, 29); // February is represented by 1 (0-indexed month)
 
             if (
                 today.getMonth() === birthday.getMonth() &&
